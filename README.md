@@ -49,5 +49,5 @@ mvn clean test -Dtest=CreateChallengeE2ETest allure:serve
 ### 4. Run Test mobile
 Before run test with mobile, we should start the Appium server, open the iOS simulator.
 ```bash
- mvn test -Dtest=ComputeSumTest allure:serve
+ mvn test -Dtest=ComputeSumTest
 ```
