@@ -39,16 +39,6 @@ public class WaitUtils {
         }
     }
 
-    public WebElement waitForElementPresence(By locator) {
-        try {
-            logger.debug("Waiting for element presence: {}", locator);
-            return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-        } catch (Exception e) {
-            logger.error("Timeout waiting for element presence: {}", locator, e);
-            throw new RuntimeException("Element not present within timeout: " + locator);
-        }
-    }
-
     public void waitForPageLoad() {
         try {
             logger.debug("Waiting for page to load");
