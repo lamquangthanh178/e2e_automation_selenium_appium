@@ -51,3 +51,7 @@ Before run test with mobile, we should start the Appium server, open the iOS sim
 ```bash
  mvn test -Dtest=ComputeSumTest
 ```
+### 5. Run Test with another environment (Stage)
+```bash
+mvn test -Denv=stage
+```
