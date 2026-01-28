@@ -1,16 +1,11 @@
 package utils;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * ElementActions - Common element interactions utility
- */
 public class ElementActions {
     private static final Logger logger = LoggerFactory.getLogger(ElementActions.class);
     private WebDriver driver;
@@ -21,9 +16,6 @@ public class ElementActions {
         this.waitUtils = new WaitUtils(driver);
     }
 
-    /**
-     * Type text in an element
-     */
     public void type(By locator, String text) {
         try {
             WebElement element = waitUtils.waitForElementVisible(locator);
@@ -36,9 +28,6 @@ public class ElementActions {
         }
     }
 
-    /**
-     * Click an element
-     */
     public void click(By locator) {
         try {
             WebElement element = waitUtils.waitForElementVisible(locator);
@@ -50,9 +39,6 @@ public class ElementActions {
         }
     }
 
-    /**
-     * Check if element is displayed
-     */
     public boolean isDisplayed(By locator) {
         try {
             WebElement element = waitUtils.waitForElementVisible(locator);
@@ -65,9 +51,6 @@ public class ElementActions {
         }
     }
 
-    /**
-     * Check if element exists
-     */
     public boolean isElementPresent(By locator) {
         try {
             driver.findElement(locator);
