@@ -1,5 +1,5 @@
 # Test Automation Framework
-This framework using Java, Selenium, TestNG, Maven, POM and Appium 
+A robust and maintainable test automation framework built using Selenium WebDriver, TestNG, Maven, and Java with the Page Object Model (POM) pattern for testing the https://ctflearn.com/ platform.
 
 ## Project Overview
 This project implements automated end-to-end testing using:
