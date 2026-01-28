@@ -1,5 +1,5 @@
-# Selenium Java Cucumber - Demoblaze Automation Testing
-A robust and maintainable test automation framework built using **Selenium WebDriver**, **Cucumber (BDD)**, and **Java** with the **Page Object Model (POM)** pattern for testing the Demoblaze e-commerce platform.
+# Test Automation Framework
+This framework using Java, Selenium, TestNG, Maven, POM and Appium 
 
 ## Project Overview
 This project implements automated end-to-end testing using:
