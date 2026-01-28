@@ -23,7 +23,7 @@ jobs:
           cache: maven
 
       - name: Run Specific Web Test
-        run: mvn test -Dtest=CreateChallengeE2ETest -Dheadless.mode=true
+        run: xvfb-run mvn test -Dtest=CreateChallengeE2ETest -Dheadless.mode=true -Denv=dev
 
       - name: Upload Allure Results
         if: always()

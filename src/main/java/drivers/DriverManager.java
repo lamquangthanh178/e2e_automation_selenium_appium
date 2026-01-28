@@ -51,9 +51,11 @@ public class DriverManager {
         options.setExperimentalOption("prefs", prefs);
 
         if (ConfigReader.isHeadless()) {
-            options.addArguments("--headless");
+            options.addArguments("--headless=new");
             options.addArguments("--no-sandbox");
-            logger.info("Chrome running in headless mode");
+            options.addArguments("--disable-dev-shm-usage");
+            options.addArguments("--window-size=1920,1080");
+            logger.info("Chrome running in headless mode with CI optimizations");
         }
 
         options.addArguments("--start-maximized");
