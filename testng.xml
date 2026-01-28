@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="CTFLearner Web Automation Suite">
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="Create Challenge E2E Tests">
+        <classes>
+            <class name="tests.web.CreateChallengeE2ETest"/>
+        </classes>
+    </test>
+
+</suite>
